@@ -3,160 +3,160 @@ Aim :
 
 Theory :
 
-1. Positive, Negative, or Zero
+A) Positive, Negative, or Zero
 Theory: This is a basic trichotomy problem. In mathematics, every real number is either positive, negative, or exactly zero. We use comparison operators (> and <) to branch the logic. Algorithm:
 
-Start.
+1)Start.
 
-Input a number num.
+2)Input a number num.
 
-If num > 0, print "Positive".
+3)If num > 0, print "Positive".
 
-Else if num < 0, print "Negative".
+4)Else if num < 0, print "Negative".
 
-Else, print "Zero".
+5)Else, print "Zero".
 
-End.
+6)End.
 
-2. Odd or Even
+B) Odd or Even
 Theory: This relies on modular arithmetic. An even number is any integer divisible by 2 with a remainder of 0. Algorithm:
 
-Start.
+1.Start.
 
-Input num.
+2.Input num.
 
-Calculate remainder = num % 2.
+3.Calculate remainder = num % 2.
 
-If remainder is 0, print "Even".
+4.If remainder is 0, print "Even".
 
-Else, print "Odd".
+5.Else, print "Odd".
 
-End.
+6.End.
 
-3. Largest of Three Numbers
+C) Largest of Three Numbers
 Theory: This problem uses compound boolean expressions. To find the largest, we compare one number against all others using the and logical operator. Algorithm:
 
-Start.
+1.Start.
 
-Input three numbers a, b, and c.
+2.Input three numbers a, b, and c.
 
-If a > b and a > c, a is the largest.
+3.If a > b and a > c, a is the largest.
 
-Else if b > a and b > c, b is the largest.
+4.Else if b > a and b > c, b is the largest.
 
-Else, c is the largest.
+5.Else, c is the largest.
 
-End.
+6.End.
 
-4. Grade Calculation
+D) Grade Calculation
 Theory: This is a range-based classification. It maps a continuous numerical scale (0–100) into discrete categories (A, B, C, D, Fail) based on thresholds. Algorithm:
 
-Start.
+1.Start.
 
-Input mark.
+2.Input mark.
 
-If mark >= 90, assign Grade A.
+3.If mark >= 90, assign Grade A.
 
-Else if mark >= 75, assign Grade B.
+4.Else if mark >= 75, assign Grade B.
 
-Else if mark >= 60, assign Grade C.
+5.Else if mark >= 60, assign Grade C.
 
-Else if mark >= 40, assign Grade D.
+6.Else if mark >= 40, assign Grade D.
 
-Else, assign Fail.
+7.Else, assign Fail.
 
-End.
+8.End.
 
-5. Leap Year Check
+E) Leap Year Check
 Theory: A year is a leap year if it is divisible by 4, but not by 100, unless it is also divisible by 400. This handles the discrepancy in the solar year. Algorithm:
 
-Start.
+1.Start.
 
-Input year.
+2.Input year.
 
-If (year % 4 == 0 AND year % 100 != 0) OR (year % 400 == 0):
+3.If (year % 4 == 0 AND year % 100 != 0) OR (year % 400 == 0):
 
-Print "Leap Year".
+ Print "Leap Year".
 
-Else:
+4.Else:
 
 Print "Not a Leap Year".
 
-End.
+5.End.
 
-6. Next Day Date Logic
+F) Next Day Date Logic
 Theory: This involves sequence manipulation and conditional logic. It handles "overflow" where exceeding the max days in a month resets the day and increments the month. Algorithm:
 
-Start.
+1.Start.
 
-Input date string and split into year, month, day.
+2.Input date string and split into year, month, day.
 
-Increment day by 1.
+3.Increment day by 1.
 
-Check days_in_month list for current month.
+4.Check days_in_month list for current month.
 
-If day > limit:
+5.If day > limit:
 
-Set day = 1, increment month.
+6.Set day = 1, increment month.
 
-If month > 12:
+7.If month > 12:
 
-Set month = 1, increment year.
+8.Set month = 1, increment year.
 
-Output formatted date.
+9.Output formatted date.
 
-End.
+10.End.
 
-7. Vowel or Consonant
+G) Vowel or Consonant
 Theory: This uses membership testing. By checking if a character exists within a predefined set (vowels), we can categorize it. Algorithm:
 
-Start.
+1.Start.
 
-Input letter.
+2.Input letter.
 
-Define a set of vowels: {a, e, i, o, u, A, E, I, O, U}.
+3.Define a set of vowels: {a, e, i, o, u, A, E, I, O, U}.
 
-If letter is in the set, print "Vowel".
+4.If letter is in the set, print "Vowel".
 
-Else, print "Consonant".
+5.Else, print "Consonant".
 
-End.
+6.End.
 
-8. Gross Salary Calculation
+H) Gross Salary Calculation
 Theory: This simulates a basic payroll system. The Gross Salary is the sum of the Basic Pay plus allowances like HRA (House Rent Allowance) and DA (Dearness Allowance), which vary based on salary brackets. Algorithm:
 
-Start.
+1.Start.
 
-Input basic salary.
+2.Input basic salary.
 
-If basic <= 10000, HRA = 20%, DA = 80%.
+3.If basic <= 10000, HRA = 20%, DA = 80%.
 
-Else if basic <= 20000, HRA = 25%, DA = 90%.
+4.Else if basic <= 20000, HRA = 25%, DA = 90%.
 
-Else, HRA = 30%, DA = 95%.
+5.Else, HRA = 30%, DA = 95%.
 
-Gross = basic + HRA + DA.
+6.Gross = basic + HRA + DA.
 
-End.
+7.End.
 
-9. Income Tax Calculation
+I) Income Tax Calculation
 Theory: This uses a Progressive Tax System. Tax is calculated in "slabs"—you don't pay the highest rate on the whole amount, only on the portion that falls within that specific bracket. Algorithm:
 
-Start.
+1.Start.
 
-Input income.
+2.Input income.
 
-If income <= 250,000, tax = 0.
+3.If income <= 250,000, tax = 0.
 
-If income <= 500,000, tax = (income - 250,000) * 0.05.
+4.If income <= 500,000, tax = (income - 250,000) * 0.05.
 
-If income <= 1,000,000, tax = 12,500 + (income - 500,000) * 0.20.
+5.If income <= 1,000,000, tax = 12,500 + (income - 500,000) * 0.20.
 
-Else, tax = 112,500 + (income - 1,000,000) * 0.30.
+6.Else, tax = 112,500 + (income - 1,000,000) * 0.30.
 
-Print tax.
+ 7.Print tax.
 
-End.
+8.End.
 
 Conclusion
 
