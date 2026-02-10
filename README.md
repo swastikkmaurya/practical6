@@ -1,5 +1,6 @@
 # practical6
-Aim : 
+
+Aim : Study of Conditional Statements in python 
 
 Theory :
 
