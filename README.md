@@ -7,17 +7,17 @@ Theory :
 A) Positive, Negative, or Zero
 Theory: This is a basic trichotomy problem. In mathematics, every real number is either positive, negative, or exactly zero. We use comparison operators (> and <) to branch the logic. Algorithm:
 
-1)Start.
+1.Start.
 
-2)Input a number num.
+2.Input a number num.
 
-3)If num > 0, print "Positive".
+3.If num > 0, print "Positive".
 
-4)Else if num < 0, print "Negative".
+4.Else if num < 0, print "Negative".
 
-5)Else, print "Zero".
+5.Else, print "Zero".
 
-6)End.
+6.End.
 
 B) Odd or Even
 Theory: This relies on modular arithmetic. An even number is any integer divisible by 2 with a remainder of 0. Algorithm:
