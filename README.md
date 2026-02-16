@@ -13,12 +13,18 @@ Relational operators (>, <, >=, <=, ==, !=) to compare values.
 The if-elif-else ladder is used when multiple conditions need to be checked. Split is used for break a single string into a list of smaller strings (substrings) based on a specific separator.
 
 Algorithm:
+
 A)
 1)Start
+
 2)Input a using a = int(input("Enter a number:"))
+
 3)If a > 0, print "Number is positive"
+
 4)Else if a < 0, print "Number is negative"
+
 5)Else, print "Number is zero"
+
 6)Stop     
 
 B)   
